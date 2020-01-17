@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <h1>Fiche de renseignement</h1>
+        <form method="POST" action="">
+            <!--Civilité-->
+            <fieldset>
+                <legend>Civilités</legend> 
+
+                <label for="nom">Quel est votre nom ?</label>
+                <input type="text" name="nom" id="nom" autofocus required/><br/>
+                <label for="prenom">Quel est votre prenom?</label>
+                <input type="text" name="prenom" id="prenom" required/><br/>
+                <label for="date">Quel est votre date de naissance?</label>
+                <input type="date" name="date" id="date" required/><br/>
+                <label for="age">votre age (de 7 à 77ans)</label>
+                <input type="number" name="age" id="age" placeholder="votre âge" min="7" max="77" required> <span>ans</span> <br>
+                <label for="telephone">Quel est votre numero de telephone?</label>
+                <input type="tel" name="telephone" id="telephone" required/><br/>
+                <label for="email"> Quel est votre addresse email?</label>
+                <input type="email" name="email" id="email" required/><br/>
+                <label for="pass">Votre mot de passe :</label>
+                <input type="password" name="pass" id="pass" required/><br/>
+                <label for="sexe">Quel est votre sexe</label>
+                <input type="radio" name="sexe" value="Homme" required/><label for="Homme">Homme</label> 
+                <input type="radio" name="sexe" value="Femme" required/><label for="Femme">Femme</label>
+                
+
+            </fieldset>
+
+            <!--Renseignements-->
+            <fieldset>
+                <legend>Renseignements</legend>
+
+                <label for="diplome">Dernier diplôme obtenu?</label>
+                <select name="diplome" id="diplome" required>
+                    <option value="aucun">Aucun</option>
+                    <option value="bac">Bac</option>
+                    <option value="bac_2">Bac+2</option>
+                    <option value="bac_3" selected>Bac+3</option> 
+                    <option value="bac_4">Bac+4</option>
+                    <option value="bac_5">Bac+5</option>
+                </select>
+                
+                  <p> Centre d'intérêt:</p>
+                    <input type="checkbox" name="centre_interet[]" id="Musique"/> <label
+                    for="Musique">Musique</label><br/>
+                    <input type="checkbox" name="centre_interet[]" id="Sport"/><label
+                    for="Sport">Sport</label><br/>
+                    <input type="checkbox" name="centre_interet[]" id="Lecture"/><label for="Lecture">Lecture</label>
+            </fieldset>
+
+            <!--Commentaires-->
+            <fieldset>
+                <legend>Commentaires</legend>
+                <label for="commentaires">Donnez-nous une description de vous (soyez bref)</label><br/>
+                    <textarea minlength="20" maxlength="50" name="commentaires" id="commentaires" placeholder="" rows="5" cols="33 ">Saisissez votre commentaire ici</textarea>
+
+            </fieldset>
+            <p><input type="checkbox" name="conditions" id="conditions" required/> <label for="conditions" >J'accepte les <a href="conditions.html">conditions</a> génerales et la politique en vigueur sur ce site.</p> </label>
+            <input type="submit" value="Envoyer"/>
+        </form>
+    </body>
+</html>
