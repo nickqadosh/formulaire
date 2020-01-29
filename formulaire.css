@@ -1,0 +1,17 @@
+body{
+    border: 2px black solid;
+    margin: 100px 100px 100px 500px;
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+legend{
+    font-size: 1em;
+    font-weight: bold;
+}
+body{
+  padding: 50px;
+  box-shadow: 2px 5px 20px black;
+}
